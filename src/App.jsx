@@ -1,9 +1,15 @@
-function App() {
+import Navbar from './components/fragments/navigation/Navbar';
+import MainContent from './components/fragments/mainContent/MainContent';
+import Footer from './components/fragments/footer/Footer';
+
+const App = () => {
   return (
-    <h1 className="font-poppins text-3xl font-bold underline text-primary hover:text-hover">
-      Hello world!
-    </h1>
+    <>
+      <Navbar />
+      <MainContent />
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
