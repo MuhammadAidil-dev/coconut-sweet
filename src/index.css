@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .link-navigation {
+    @apply after:content-[''] after:block after:border-b-2 after:border-primary after:scale-x-0 after:origin-left after:pb-1 after:transition-all;
+  }
+}
