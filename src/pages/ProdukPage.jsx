@@ -3,7 +3,7 @@ import { dataVariantProduk } from '../global/data';
 import InputContainer from '../components/fragments/inputContainer/InputContainer';
 import { useInput } from '../hooks/hooks';
 import { useEffect, useState } from 'react';
-import { formattingPrice } from '../utils/utils';
+import { formattingPrice, sendToWhatsapp } from '../utils/utils';
 
 const ProdukPage = () => {
   return (
@@ -107,7 +107,7 @@ const ProdukOrderForm = () => {
       totalPrice,
     };
 
-    console.log(newOrder);
+    sendToWhatsapp(newOrder);
   };
 
   useEffect(() => {
